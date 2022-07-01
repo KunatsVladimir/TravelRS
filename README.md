@@ -1,5 +1,2 @@
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 135704e60598ed3690a07a9e564eb1699506d7c8
+https://rolling-scopes-school.github.io/KunatsVladimir-JSFEPRESCHOOL2022Q2/travel/
+Private repository for @kunatsvladimir
