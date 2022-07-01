@@ -25,34 +25,13 @@
     src: local(''),
          url('../fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-
-  a{
-    text-decoration: none;
-    }
-li{
-    list-style: none;
-    }
-body{
-        max-width: 1440px;
-        margin: 0 auto;
-        position: relative;
-    }
-
-.header{
-position: absolute;
-width: 1440px;
-height: 90px;
-left: 0px;
-top: 0px;
 }
 
-.header_container
-{position: absolute;
-width: 1440px;
-height: 765px;
-left: 0px;
-top: 0px;
-background: url(headertravel.jpg);
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .header{ 
@@ -62,116 +41,430 @@ background: url(headertravel.jpg);
     background-color: rgba(242, 120, 92, 0.7);      
 }
 
-.header_logo{position: absolute;
-    width: 216px;
-    height: 31px;
-    left: 120px;
-    top: 25px;
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.header_menu_howitworks{
-    width: 98px;
-height: 21px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 25px 120px;
 }
 
-.header_menu_planyourtrip{
-    width: 105px;
-height: 21px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
-.header_menu_destinations{
-    width: 95px;
-height: 21px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
+.header_links{
+    margin-right: 42px;    
 }
 
-.header_menu_travelstories{
+.header_links:last-child{
+    margin-right: 0;
+}
+
+.header_link{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header_link:hover,:focus,:active{
+    opacity: 70%;
+}
+
+.header_login{
     width: 103px;
-height: 21px;
-font-family: 'Red Hat Text';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 21px;
-color: #FFFFFF;
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
+    height: 41px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
-.button_login{
-    /* Frame 1 */
-/* Auto layout */
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 229px;
-gap: 10px;
-position: absolute;
-width: 103px;
-height: 41px;
-left: 1217px;
-top: 25px;
-background: #0D606F;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-border-radius: 10px;
+.header_logo_travel_portal{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header_main{    
+    background: url("../img/jpg/bodyimage.jpg") no-repeat;
+    background-size: cover;
+}  
+
+.main_section{
+    width: 100%;
+    padding-top: 122px;
+    padding-left: 120px;
+    margin-bottom: 301px;
 }
 
-.destinations_slider_peru{
+.main_wrapper{
+    width: 892px;
+    height: 422px;
+}
+
+.main_title{    
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;    
+    margin-bottom: 46px;
+}
+
+.main_second_title{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+}
+
+.main_search{
+    position: relative;
+    height: 95px;    
+}
+
+.main_search_recomendations{
+    width: 100%;
+    height: 95px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: 0;   
+    position: absolute;         
+}
+
+.search_recomendations::placeholder {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    padding-left: 41px;
+}
+
+.button{ 
+    height: 59px;
+    width: 228px;
+    padding: 10px 32px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF; 
     position: absolute;
-width: 800px;
-height: 800px;
-left: 0px;
-top: 0px;
-background: url(.jpg), #FFFFFF;
-border-radius: 16px;
+    top: 18px;
+    right: 18px;     
 }
 
-.destinations_slider_japan{
-    position: absolute;
-width: 800px;
-height: 800px;
-left: 860px;
-top: 0px;
-background: url(.jpg), #FFFFFF;
-border-radius: 16px;
+.steps_section{
+    margin-bottom: 97px;
 }
 
-.destinations_slider_usa{position: absolute;
-width: 800px;
-height: 800px;
-left: 1720px;
-top: 0px;
-background: url(.jpg), #FFFFFF;
-border-radius: 16px;}
+.steps_to_perfect_trip{
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+
+.steps_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1177px;
+    height: 154px;
+    margin-top: 40px;
+    margin-left: 131px;
+}
+
+.steps_link{
+    height: 154px;    
+    display: flex;
+    flex-direction: column-reverse;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.steps_link_title{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.steps_link_img{
+    width: 100px;
+    height: 100px;
+}
+
+.destinations_container{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    text-align: center
+}
+
+.destinations_spain{
+    background: url("..img/jpg/destinations_spain.jpg") no-repeat;
+    min-width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    border: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+.destinations_japan{
+    background: url("..img/jpg/destinations_japan.jpg") no-repeat;
+    min-width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    border: 0; 
+    display: flex;
+    align-items: flex-end;
+    margin-right: 60px;
+      
+}
+
+.destination_usa{
+    background: url("..img/jpg/destinations_japan.jpg") no-repeat;
+    min-width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    border: 0; 
+    display: flex;
+    align-items: flex-end;   
+}
+
+.destinations_title{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-left: 15px; 
+    padding-bottom: 40px;
+}
+.destinations-nav{
+    width: 80px;
+    height: 20px;
+    margin: 24px auto 40px auto;
+}
+
+.destinations_images{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.destinations_img{
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border: 0;
+    border-radius: 50%;
+}
+.destinations_img_middle{
+    width: 20px;
+    height: 20px;
+    background: #F2785C;
+    border: 0;
+    border-radius: 50%;
+}
+
+.destinations_title{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.destinations_for_scroll{
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    margin: 0px auto 80px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.destinations_find_more_svg{
+    margin-right: 10px;
+}
+
+.destinations_find_more{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.stories_links{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.stories_section{
+    
+}
+
+.stories_article{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-left: 119px;
+}
+
+.stories_article:last-child{
+    margin-bottom: 0;
+}
+
+.stories_picture{
+    width: 400px;
+    height: 250px;
+    margin-right: 40px;
+}
+
+.stories{
+    display: flex;
+    flex-direction: column;
+}
+
+.stories_link_title{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin-bottom: 24px;
+}
+
+.stories_link_text{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.stories_link_read_more{
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.stories_see_more{
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.network_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 140.96px;
+    height: 33.65px;
+}
+
+.footer{
+    margin-top: 55px;
+    padding-bottom: 13.35px;
+}
+
+.footer_rights{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer_networks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    width: 728.96px;
+    height: 33.65px;
+    margin-left: 590px;
+}
+
+.network_links{
+    width: 140.96px;
+    height: 33.65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+.network_picture{
+    width: 33.65px;
+    height: 33.65px;
+}
